@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        maven "3.8.6"
+        maven "3.6.1"
     }
     stages {
         stage('Clean and Install') {
