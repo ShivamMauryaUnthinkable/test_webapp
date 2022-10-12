@@ -4,12 +4,12 @@ pipeline {
         stage('Clean and Install') {
             steps {
                sh '''echo $PWD''' 
-               sh '''#!/bin/bash mvn clean install'''
+               sh '''mvn clean install'''
             }
         }
         stage('Package') {
             steps {
-                sh '''#!/bin/bash mvn package'''
+                sh '''mvn package'''
             }
         } 
     }
