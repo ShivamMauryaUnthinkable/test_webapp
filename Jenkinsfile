@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clean and Install') {
             steps {
-               sh '''#!/bin/bash echo $PWD''' 
+               sh '''echo $PWD''' 
                sh '''#!/bin/bash mvn clean install'''
             }
         }
