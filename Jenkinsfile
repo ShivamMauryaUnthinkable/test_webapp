@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Clean and Install') {
             steps {
-               bash 'mvn clean install'
+               /usr/bin/bash 'mvn clean install'
             }
         }
         stage('Package') {
             steps {
-               bash 'mvn package'
+               /usr/bin/bash 'mvn package'
             }
         } 
     }
