@@ -3,12 +3,16 @@ pipeline {
     stages {
         stage('Clean and Install') {
             steps {
-               /usr/bin/bash 'mvn clean install'
+               sh '''#!/bin/bash
+                 mvn clean install" 
+         '''
             }
         }
         stage('Package') {
             steps {
-               /usr/bin/bash 'mvn package'
+                sh '''#!/bin/bash
+                 mvn package" 
+         '''
             }
         } 
     }
